@@ -77,7 +77,7 @@ function caesarCipher(str) {
 }
 
 function analyzeArray(inputArray) {
-    let averageOutput = inputArray.reduct((a,b) => a + b) / inputArray.length;
+    let averageOutput = inputArray.reduce((a,b) => a + b) / inputArray.length;
     let minimumOutput = Math.min(...inputArray);
     let maximumOutput = Math.max(...inputArray);
     let arrayLengthOutput = inputArray.length;
@@ -95,3 +95,4 @@ module.exports.capitalize = capitalize;
 module.exports.reverseString = reverseString;
 module.exports.calculator = calculator;
 module.exports.caesarCipher = caesarCipher;
+module.exports.analyzeArray = analyzeArray;

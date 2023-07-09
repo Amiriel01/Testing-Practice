@@ -31,4 +31,9 @@ test("A calculator object that contains functions for the basic operation: divid
 
 test("A caesar cipher function that takes a string and a shift factor and returns it with each character “shifted”.", () => {
     expect(practice.caesarCipher("Zebra!")).toBe("Afcsb!");
-})
+});
+
+test("An analyze array function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
+    //use toEqual for testing if the string input will be the exact string output//
+    expect(practice.analyzeArray([1,8,3,4,2,6])).toEqual({average: 4, minimum: 1, maximum: 8, arrayLength: 6})
+});

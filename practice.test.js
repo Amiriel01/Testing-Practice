@@ -28,3 +28,7 @@ test("A calculator object that contains functions for the basic operation: multi
 test("A calculator object that contains functions for the basic operation: divide.", () => {
     expect(practice.calculator.divide(8,2)).toBe(4);
 });
+
+test("A caesar cipher function that takes a string and a shift factor and returns it with each character “shifted”.", () => {
+    expect(practice.caesarCipher("Zebra!")).toBe("Afcsb!");
+})
